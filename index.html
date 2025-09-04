@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chúc mừng sinh nhật babe!!!</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <button id="light-btn">Turn on the lights</button>
+    </div>
+
+    <div class="bd-strings">
+        <img src="images/flags.png">
+        <img src="images/flags.png">
+        <img src="images/flags.png">
+    </div>
+
+    <div class="balloons">
+
+        <div class="balloons left">
+            <img src="images/balloons.png">
+        </div>
+
+        <div class="balloons right">
+            <img src="images/balloons.png">
+        </div>
+
+    </div>
+    
+    <div class="table-container">
+        <div class="table">
+            <img src="images/table.png">
+        </div>
+
+        <div class="cake-wrapper">
+            <div class="cake">
+                <div class="layer bottom"></div>
+                <div class="layer top"></div>
+                <div class="cream"></div>
+
+                <div class="candles">
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-front">
+                <p> Open Me </p>
+                </div>
+
+                <div class="card-inside">
+                    <p>
+                        Chúc mừng sinh nhật babe yêu của anh! Một năm nữa lại trôi qua babe giờ đã tròn 19 tuổi rồi 
+                        năm nay chúc ta không thể gặp nhau trực tiếp nên anh làm cái trang này để tặng babe hehe. Chúc
+                        babe sang tuổi mới luôn khỏe mạnh, tràn đầy sức sống nè, luôn giữ nụ cười xinh xắn trên môi, luôn
+                        yêu thương, chăm sóc cho người thân và người yêu. Cảm ơn em yêu đã cho anh khoảng thời gian tuyệt 
+                        vời trong gần 3 năm vừa qua, anh mong chúng ta sẽ có đi xa hơn nữa trong tương lai. Tuy đây không
+                        phải là gì nhiều nhưng mà mong Thảo thích hehe. Anh yêu Thảo rất nhiều hihi <3                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cake OUTSIDE of table-container so it doesn’t blur -->
+    
+    <div class="card-overlay"></div>
+
+    <div class="cake-overlay"></div>
+
+    <div class="wish-ui">
+        <p id="wish-text">Make a wish 🎂</p>
+            <button id="wish-btn">Start Countdown</button>
+        <p id="countdown"></p>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <audio id="confetti-sound">
+        <source src="confetti-pop-sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
